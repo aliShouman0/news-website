@@ -21,12 +21,17 @@ img {
 .navbar-brand {
   background-color: #6fedd6;
 }
+ 
 
-.breaking_news {
-  width: 90%;
-  height: 60vh;
+.carousel-item img {
+  width: 80%;
+  height: 100%;
   margin: auto;
 }
 
-.carousel-item img{ 
+/* trending section*/
+.trending {
+  width: 90%;
+  height: 60%;
+  margin: 1rem auto;
 }
