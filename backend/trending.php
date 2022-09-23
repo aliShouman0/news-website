@@ -2,7 +2,7 @@
 include "connection.php"; //get connection and add header to allow access
 $data = [];
 
-$sql = "select * from sport  ";
+$sql = "select * from trending";
 $query = $mysqli->prepare($sql);
 if ($query->execute()) {
   $result = $query->get_result();
