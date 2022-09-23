@@ -1,0 +1,44 @@
+/* css reset */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #a7d2cb;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* nav bar */
+.navbar {
+  background-color: #b9fff8;
+}
+/* name website */
+.navbar-brand {
+  background-color: #6fedd6;
+}
+
+/* Breaking News */
+.carousel-inner{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.carousel-item img {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+/* trending section*/
+.trending {
+  width: 90%;
+  height: 60%;
+  margin: 1rem auto;
+}
