@@ -14,14 +14,21 @@ img {
   height: 100%;
 }
 
+/* nav bar */
 .navbar {
   background-color: #b9fff8;
 }
-
+/* name website */
 .navbar-brand {
   background-color: #6fedd6;
 }
- 
+
+/* Breaking News */
+.carousel-inner{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
 
 .carousel-item img {
   width: 80%;

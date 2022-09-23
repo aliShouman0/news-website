@@ -4,7 +4,7 @@ const trending = document.querySelector("#news");
 const sport = document.querySelector("#sport");
 const carousel_indicators = document.querySelector("#carousel-indicators");
 const carousel_inner = document.querySelector("#carousel-inner");
-// api 
+// api
 const api_sportNews = "http://localhost:3000/backend/sport.php";
 const api_breaking_news = "http://localhost:3000/backend/breaking_news.php";
 const api_trending = "http://localhost:3000/backend/trending.php";
@@ -13,14 +13,14 @@ const api_trending = "http://localhost:3000/backend/trending.php";
 $.getJSON(api_sportNews, function (data) {
   data.forEach((news) => {
     sport.innerHTML += `
-     <div class="shadow-lg p-4 mb-5 mx-5 rounded">
+     <div class="shadow-lg p-4 mb-4 mx-5 rounded border border-info">
     ${news.txt}
     </div>
     `;
   });
 });
 
-
+// trending news
 $.getJSON(api_trending, function (data) {
   data.forEach((news) => {
     trending.innerHTML += `
@@ -37,15 +37,18 @@ $.getJSON(api_trending, function (data) {
   });
 });
 
-
-
+// breaking_news
 $.getJSON(api_breaking_news, function (data) {
+  //first must fill carousel indicators depend on nb of news
   for (let i = 0; i < data.length; i++) {
     carousel_indicators.innerHTML += `
     <li data-target="#breakingNews" data-slide-to="${i}"></li> 
     `;
   }
+
+  // fill data/news in  carousel
   data.forEach((news, i) => {
+    // if it's first news must be active else not active
     if (i == 0) {
       carousel_inner.innerHTML += ` 
       <div class="carousel-item active">
