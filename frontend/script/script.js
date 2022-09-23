@@ -1,4 +1,4 @@
-const breaking_news = document.querySelector("#breaking_news");
+const breakingNews = document.querySelector("#breakingNews");
 const trending = document.querySelector("#news");
 const sport = document.querySelector("#sport");
 const api_sportNews = "http://localhost:3000/backend/sport.php";
